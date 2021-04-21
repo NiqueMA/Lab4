@@ -173,3 +173,10 @@ aside
     text-align: center;
     background-color: lightgray;
 }
+
+.responsive 
+{
+    max-width: 100%;
+    height: auto;
+}
+  
