@@ -1,0 +1,176 @@
+* 
+{
+    box-sizing: border-box;
+}
+
+.city
+{
+    text-align: center;
+    font-size: 50%;
+}
+
+[class*="col-"] 
+{
+    float: left;
+    padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] 
+{
+    width: 100%;
+}
+  
+  @media only screen and (min-width: 600px) 
+{
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+  
+  @media only screen and (min-width: 768px) 
+{
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+.row::after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav
+{
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s
+}
+
+nav a 
+{
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+nav a:hover, nav a:focus 
+{
+    color: #f1f1f1;
+}
+
+nav .closebtn 
+{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.menu
+{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media screen and (max-height: 450px) 
+{
+    nav {overflow-y: auto;}
+    nav a {font-size: 20px}
+    nav .closebtn 
+    {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
+
+/* Container holding the image and the text */
+header
+{
+    position: relative;
+}
+  
+  /* Bottom right text */
+.text-block 
+{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about
+{
+    text-align: justify;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+aside 
+{
+    margin-left: 25%;    
+    font-style: italic;
+    text-align: center;
+    background-color: lightgray;
+}
