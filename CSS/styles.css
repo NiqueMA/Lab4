@@ -3,10 +3,12 @@
     box-sizing: border-box;
 }
 
-.city
+body, html
 {
-    text-align: center;
-    font-size: 50%;
+  background-color: #3c415c;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 [class*="col-"] 
@@ -143,7 +145,8 @@ header
     text-align: justify;
 }
 
-#overlay {
+#overlay 
+{
   position: fixed;
   display: none;
   width: 100%;
@@ -157,21 +160,20 @@ header
   cursor: pointer;
 }
 
-#text{
-  position: absolute;
+#text
+{
+  position: relative;
   top: 50%;
   left: 50%;
-  font-size: 50px;
-  color: white;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
 }
 
 aside 
-{ 
+{   
     font-style: italic;
     text-align: center;
-    background-color: lightgray;
+    background-color: #b4a5a5;
 }
 
 .responsive 
@@ -180,3 +182,61 @@ aside
     height: auto;
 }
   
+.foodcolumn 
+{
+  flex: 25%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.foodcolumn img
+ {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+
+.foodrow 
+{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+h1
+{
+  text-align: center;
+}
+
+p
+{
+  display: inline-block;
+}
+
+.title
+{
+  color: #301b3f;
+  font-size: 500%;
+  font-weight: bold;
+}
+
+p
+{
+  font-size: 200%;
+}
+
+.landscape
+{
+  background-image: url(/Lab6/CityProject/Pics/skyhome.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.sched
+{
+  text-align: center;
+  font-weight: bold;
+}
