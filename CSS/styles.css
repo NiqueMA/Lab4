@@ -240,3 +240,17 @@ p
   text-align: center;
   font-weight: bold;
 }
+
+li
+{
+  font-size: 200%;
+  margin-left: 10%;
+}
+
+.food
+{
+  color: #301b3f;
+  font-size: 250%;
+  font-weight: bold;
+  margin-left: 10%;
+}
